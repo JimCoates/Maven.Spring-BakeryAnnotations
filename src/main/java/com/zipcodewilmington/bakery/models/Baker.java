@@ -1,13 +1,17 @@
 package com.zipcodewilmington.bakery.models;
 
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Baker {
     private Long id;
 
     private String name;
 
+    @Id
     private String employeeId;
 
     private String specialty;
@@ -38,7 +42,7 @@ public class Baker {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)  {
         this.name = name;
     }
 
